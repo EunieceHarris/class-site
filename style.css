@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'reeyregular';
+    src: url('reey-regular-webfont.woff2') format('woff2'),
+         url('reey-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  /* background-color: #06062d; */
+  background: rgb(6,6,45);
+  background: linear-gradient(180deg, rgba(6,6,45,1) 0%, rgba(50,65,91,1) 50%, rgba(10,37,30,1) 100%);
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  background-attachment: fixed;
+}
+
+
+.main_section {
+  display: flex;
+  justify-content: center;
+}
+
+.main_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main_content > header > p{
+  font-weight: 600;
+  font-size: 4em;
+  font-family:'reeyregular';
+  color: #e9e9fc;
+  margin-top: 0;
+}
+
+/* .main_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+} */
+
+.main_list_style {
+  /* border-top: solid white 1px; */
+  color: white;
+  list-style-type: none;
+  margin: 0;
+}
+
+.list_eureka {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.list_eureka > div {
+  width: 50%;
+  /* height: 50%; */
+  /* border: 2px solid green; */
+  margin: 0;
+  text-align: center;
+  line-height: 300px;
+
+}
+
+.list_eureka_items > div {
+  background: rgb(95,116,180);
+  background: radial-gradient(circle, rgba(95,116,180,1) 0%, rgba(255,255,255,0) 63%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 800px) {
+  .list_eureka > div {
+    width: 33%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .list_eureka > div {
+    width: 20%;
+  }
+
+}
+
+@media screen and (max-width: 525px) {
+  .main_content > header {
+    font-size: 2vw;
+  }
+
+}
