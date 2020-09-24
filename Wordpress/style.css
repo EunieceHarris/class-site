@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+mark {
+    background-color: aquamarine;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem; 
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*=================================
+Header and Nav Styling
+=================================*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 3rem;
+    /* border: 2px solid rgba(23, 65, 128, 0.25); */
+    padding: 10px; 
+    text-align: center;
+    line-height: 30px;
+}
+
+.header-title > span {
+    font-size: 1rem;
+    line-height: 10px;
+    padding: 5px;
+    margin: 5px; 
+}
+
+.chapters {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+nav {
+    display: flex;
+    margin-top: 20px; 
+    justify-content: space-between;
+}
+
+/*=================================
+Snippet Feed Styling
+=================================*/
+
+.snippet {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: space-around;
+   border-top: 2px solid rgba(23, 65, 128, 0.25); 
+    border-bottom: 2px solid rgba(23, 65, 128, 0.25);
+   padding: 10px;
+   align-items: center;
+}
+
+.snippet > div {
+    text-align: center; 
+    padding: 15px;
+    border-right: 1px solid rgba(30, 106, 221, 0.25);
+    /* border-left: 1px solid rgba(30, 106, 221, 0.25); */
+    width: 25%;
+}
+
+.snippet > div:last-child {
+    border-right: none;
+}
+
+/*=================================
+Main Article Styling
+=================================*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding-bottom: 20px;
+}
+
+main > button {
+    position: absolute;
+    width: 30px; 
+    z-index: 2;
+    top: 50%;
+    align-items: center;
+}
+
+main > div {
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.main-title {
+    width: 25%; 
+    text-align: center;
+}
+
+.main-photo > .gallery-more {
+    position: relative;
+    display: block;
+    top: 90%;
+    text-align: center;
+    color: azure;
+    font-size: 3rem;
+}
+
+.main-photo {
+    background-image: url(jonas_forsberg-red_cabin-5360.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 40vh;
+    padding: 20px;
+}
+.main-subtext {
+    width: 25%; 
+    text-align: center;
+}
+
+/*=================================
+Bottom Feed Styling
+=================================*/
+
+
+.bottom-feed {
+    position: fixed;
+    /* border: 2px solid rgba(30, 106, 221, 0.25); */
+    height: 170px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.bottom-feed > div {
+    width: 165px;
+    height: 165px;
+    /* border: 2px solid rgba(23, 65, 128, 0.25); */
+}
+
+.feed-item {
+    display: inline-block;
+    justify-content: space-evenly; 
+    text-align: center;
+}
+
+.feed-item > p {
+    padding-top: 20%;
+    font-weight: 900;
+    font-size: 2rem;
+    display: none;
+}
+
+
+/*=================================
+Bottom Feed Photos Styling
+=================================*/
+
+.feed-photos > .photo-1 {
+    background-image: url(photos/web-friendly/alexander_hall-swedish_fika-6278.png);
+    background-position: center;
+    background-size: cover;
+} 
+
+.feed-photos > .photo-2 {
+    background-image: url(photos/web-friendly/asaf_kliger-year-round_icehotel-6866.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-3 {
+    background-image: url(photos/web-friendly/hans-olof_utsi-winter_in_northern_sweden-5315.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-4 {
+    background-image: url(photos/web-friendly/ola_ericson-alfred_nobel-154.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-5 {
+    background-image: url(photos/web-friendly/pexels-rfstudio-3618721.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-6 {
+    background-image: url(photos/web-friendly/pexels-teddy-tavan-4890733.png);
+    background-position: center;
+    background-size: cover;
+}
+.feed-photos > .photo-7 {
+    background-image: url(photos/web-friendly/sofia_sabel-swedish_algae_factory-6768.png);
+    background-position: center;
+    background-size: cover;
+}  
+.feed-photos > .photo-8 {
+    background-image: url(photos/web-friendly/tina_stafrén-fika_with_cinnamon_buns-7518.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-9 {
+    background-image: url(photos/web-friendly/EevMzPcXoAElJA_.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-10 {
+    background-image: url(photos/web-friendly/EeyvfDNWoAAkchV.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-11 {
+    background-image: url(photos/web-friendly/Ehqkq1fWAAMTE6Y.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-12 {
+    background-image: url(photos/web-friendly/Macro_11.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-13 {
+    background-image: url(photos/web-friendly/EeJpeZ4WAAENXdi.png);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-14 {
+    background-image: url(photos/web-friendly/no-context-dancing-and-war.gif);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-15 {
+    background-image: url(photos/web-friendly/EasBROfWAA4TjpZ.jpeg);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-16 {
+    background-image: url(photos/web-friendly/EbXqDvlXYAEkbkn.jpeg);
+    background-position: center;
+    background-size: cover;
+} 
+.feed-photos > .photo-17 {
+    background-image: url(photos/web-friendly/EeJpeZ4WAAENXdi.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*====================================
+Art-post Page
+======================================*/
