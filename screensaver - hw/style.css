@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IM Fell English', serif;
+    /* font-family: 'Pragati Narrow', sans-serif; */
+    font-size: 2rem;
+    font-style: italic;
+    color: rgb(201, 224, 224);
+    margin: 0; 
+    /* background-color: antiquewhite; */
+}
+
+.body-images {
+    background: url('photos/jerker_andersson-fog-6690.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banners {
+    height: 100vh;
+    width: 100vw;
+    /* border: 12px solid blue; */
+    display: flex;
+    position: relative;
+    /* text-align: center; */
+    overflow: hidden;
+}
+
+.banner-1 {
+    position: absolute;
+    /* background-color: rgba(255, 208, 46, 0.4); */
+    /* text-align: right; */
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.banner-2 {
+    min-height: 100%;
+    writing-mode: vertical-rl;
+    position: absolute;
+    /* background-color: rgba(232, 60, 44, 0.4); */
+    /* top: 50%; */
+    left: 0;
+    z-index: -2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.banner-3 {
+    position: absolute;
+    display: block;
+    /* background-color: rgba(44, 232, 199, 0.4); */
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.banner-4 {
+    min-height: 100%;
+    writing-mode: vertical-rl;
+    position: absolute;
+    display: block;
+    /* background-color: rgba(111, 62, 254, 0.4); */
+    z-index: 1;
+    right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* text-align: right; */
+}
+
+.banner-1 > div {
+    /* animation: announcementX 6s infinite linear reverse; */
+}
+.banner-2 > div {
+    animation: announcementY 20s infinite linear alternate-reverse;
+}
+
+.banner-3 > div {
+    /* border: 2px green solid; */
+    /* transform: translateX(-300px); */
+    /* animation: announcementX 6s infinite linear; */
+}
+.banner-4 > div {
+    animation: announcementY 20s infinite linear reverse;
+}
+
+.clock-item {
+    position: fixed;
+    /* border: 2px solid salmon; */
+    height: 400px;
+    width: 400px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.5rem;
+}
+.mini-clock {
+    animation: miniClock 5s infinite alternate;
+}
+
+/* .span-color {
+    animation: fadeInColor 5s infinite;
+} */
+
+#search {
+    width: 70%;
+    padding: 12px 10px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid rgb(233, 232, 232);
+    background-color: rgba(240, 248, 255, 0);
+
+}
+button {
+    width: auto;
+    padding: 12px 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 105, 180, 0);
+    border: 1px solid rgb(233, 232, 232);
+}
+
+@keyframes announcementX {
+    0% {transform: translateX(-600px);}
+    100% {transform: translateX(100vw);}
+}
+@keyframes announcementY {
+    0% {transform: translateY(-1600px)}
+    100% {transform: translateY(100vh)}
+}
+@keyframes miniClock {
+    0% {color: rgba(201, 224, 224, 0.0)}
+    100% {color: rgba(201, 224, 224, 1)}
+}
+
+@keyframes fadeInColor {
+    0% {color: rgba(201, 224, 224, 0.0)}
+    100% {color: rgba(201, 224, 224, 1)}
+}
+
+
+
+
+
+
+
+
+
+
+
