@@ -166,7 +166,7 @@ body {
 .jeans {
     width: 100%;
     height: 200px;
-    background-color: rgb(192, 151, 112);
+    background-color: blue;
     display: flex;
     justify-content: space-between;
 }
@@ -174,7 +174,7 @@ body {
 .jeans > div {
     width: 35%;
     height: 600px;
-    background-color: rgb(192, 151, 112);
+    background-color:blue;
     display: flex;
     justify-content: space-between;
 }
