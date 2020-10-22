@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beard Boy</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/hot-sneaks/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    
+</head>
+
+<body>
+    <div class="site-container">
+        <div id="energy-bar" class="energy-bar"></div>
+        <div class="beard-boy">
+            <div class="hair">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="body">
+                <div class="eyes">
+                    <div class="eyes-item eye-1">
+                        <div class="iris"></div>
+                    </div>
+                    <div class="eyes-item eye-2">
+                        <div class="iris"></div>
+                    </div>
+                </div>
+                <div class="nose">
+                    <div class="nose-item"></div>
+                    <div class="beard">
+                    </div>
+                </div>
+                <div class="clothes">
+                    <div class="jacket">
+                        <div class="lapel"></div>
+                        <div class="lapel"></div>
+                    </div>
+                    <div class="shirt"></div>
+                    
+                </div>
+                <div class="jeans">
+                    <div class="legs"></div>
+                    <div class="legs"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+    let manEyes = document.querySelector('.site-container');
+
+        manEyes.addEventListener('mousemove', (e) => {
+            let eye = document.querySelector('.eyes-item');
+            let mouseX = (eye.getBoundingClientRect().left);
+            let mouseY = (eye.getBoundingClientRect().top);
+            let radianDegrees = Math.atan2(e.pageX - mouseX, e.pageY - mouseY);
+            let rotationDegrees = (radianDegrees * (180 / Math.PI) * -1) + 180;
+            eye.getElementsByClassName.transform = `rotate(${rotationDegrees}deg)`
+        });
+    </script>
+
+</body>
+
+</html>

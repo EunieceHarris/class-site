@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: gainsboro;
+    margin: 0;
+}
+
+.site-container {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin: 10px;
+    /* align-items: center */
+}
+
+.energy-bar {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 250px;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.energy-bar:hover {
+    /* animation: energyBar .75s ease-in; */
+}
+
+.beard-boy {
+    border: 2px solid black ;
+    width: 400px;
+    height: 2000px;
+    position: relative;
+    /* padding-top: 20px; */
+}
+
+.hair {
+    width: 100%;
+    height: initial;
+    border: 2px solid hotpink;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+
+.hair > div {
+    width: 1px;
+    height: 70px;
+    background-color: black;
+}
+
+.body {
+    border: 2px solid orange;
+    background-color: rgb(245, 192, 94);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.eyes {
+    display: flex;
+    border: 2px solid green;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.eyes > div {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+    border-radius: 100%;
+    background-color: rgb(250, 245, 246);
+}
+
+.iris {
+    /* --iris-size:  */
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.nose {
+    width: 100%;
+    /* padding-top: 5px; */
+    height: initial;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nose-item {
+    /* border: 2px solid orange; */
+    width: 100px;
+    height: 150px;
+    border-radius: 50px;
+    border-top-right-radius: 110px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(40, 168, 68);
+}
+
+.beard {
+    width: 100%;
+    height: 325px;
+    background-color: rgb(129, 79, 32);
+    /* position: absolute; */
+    margin-top: 50px;
+    top: 50px;
+    z-index: 1;
+    border-top-right-radius: 100px; 
+    border-top-left-radius: 100px; 
+
+}
+
+.clothes {
+    border: 2px solid violet;
+    width: 100%;
+    height: initial;
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+.jacket {
+    display: flex;
+    width: 100%;
+    /* position: relative; */
+    z-index: 2;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 2px solid brown;
+}
+
+.jacket > .lapel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lapel {
+    width: 30%;
+    height: 500px;
+    background-color: black;
+}
+
+.shirt {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 400px;
+    background-color: azure;
+}
+
+.jeans {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(192, 151, 112);
+    display: flex;
+    justify-content: space-between;
+}
+
+.jeans > div {
+    width: 35%;
+    height: 600px;
+    background-color: rgb(192, 151, 112);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@keyframes energyBar {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-200px)
+    }
+}
