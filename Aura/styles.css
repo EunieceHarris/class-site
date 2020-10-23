@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Staatliches', cursive;
     background-color: gainsboro;
     margin: 0;
 }
@@ -18,6 +18,35 @@ body {
     /* align-items: center */
 }
 
+.intro {
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+}
+
+.intro > ul {
+    list-style: none;
+}
+
+.intro-2 {
+    margin: 20px;
+    margin-right: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+}
+
+.intro-2 > ul {
+    list-style: none;
+}
+
+.intro-2-img {
+    width: 100px;
+}
+
 .energy-bar {
     position: fixed;
     top: 0;
@@ -28,11 +57,11 @@ body {
 }
 
 .energy-bar:hover {
-    /* animation: energyBar .75s ease-in; */
+    animation: energyBar .75s ease-in;
 }
 
 .beard-boy {
-    border: 2px solid black ;
+    /* border: 2px solid black ; */
     width: 400px;
     height: 2000px;
     position: relative;
@@ -42,7 +71,7 @@ body {
 .hair {
     width: 100%;
     height: initial;
-    border: 2px solid hotpink;
+    /* border: 2px solid hotpink; */
     padding-top: 5px;
     display: flex;
     justify-content: space-evenly;
@@ -57,7 +86,7 @@ body {
 }
 
 .body {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     background-color: rgb(245, 192, 94);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -66,7 +95,7 @@ body {
 
 .eyes {
     display: flex;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 100%;
     height: 200px;
     position: relative;
@@ -95,7 +124,7 @@ body {
     width: 100%;
     /* padding-top: 5px; */
     height: initial;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -122,11 +151,12 @@ body {
     z-index: 1;
     border-top-right-radius: 100px; 
     border-top-left-radius: 100px; 
+    border-bottom-left-radius: 200px;
 
 }
 
 .clothes {
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     width: 100%;
     height: initial;
     display: flex;
@@ -141,7 +171,7 @@ body {
     z-index: 2;
     justify-content: space-between;
     flex-direction: row;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
 }
 
 .jacket > .lapel {
